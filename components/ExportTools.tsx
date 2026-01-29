@@ -75,11 +75,11 @@ export default function ExportTools() {
                 className="hidden"
                 id="import-file"
               />
-              <label htmlFor="import-file">
-                <Button variant="outline" as="span">
+              <label htmlFor="import-file" className="cursor-pointer">
+                <span className="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-300 bg-white hover:bg-gray-50 h-10 px-4 py-2">
                   <Upload className="mr-2 h-4 w-4" />
                   Import from JSON
-                </Button>
+                </span>
               </label>
             </div>
             {importStatus && (
